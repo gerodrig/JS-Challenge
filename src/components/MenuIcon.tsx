@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material"
 
 interface IMenu {
@@ -6,7 +6,6 @@ interface IMenu {
     name: string;
     children: any;
 }
-
 
 export const MenuIconComponent: FC<IMenu> = ({name, isOpen, children}) => {
     return (
